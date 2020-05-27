@@ -1,0 +1,213 @@
+@charset "utf-8";
+body{
+    background-color: #EEEEEE;
+    position: relative;
+}
+header .top{
+    width: 100%;
+    height: 2.55rem;
+    background-color: #FFFFFF;
+    line-height: 2.55rem;
+    color:#000000;
+}
+header .top .p1{
+    font-size: .85rem;
+    margin-left: .75rem;
+}
+header .top .p2{
+    font-size: .85rem;
+    margin-left: 5rem; 
+}
+.content .banner{
+    width: 100%;    
+    height: 11rem;
+    position: relative;
+    overflow: hidden;
+}
+.content .banner .ul1{
+    width: 200%; 
+    position: absolute;
+    left: 0;top: 0;
+}
+.content .banner .ul1 li{
+    width: 50%;
+    height: 11rem;
+    float: left;
+    display: none;
+}
+.content .banner .ul1 .show{
+    display: block;
+}
+.content .banner .ul1 li a img{
+    width: 100%;
+    height: 100%;
+}
+.content .banner .ul2{
+    position: absolute;
+    left: 47%;bottom: .5rem;
+}
+.content .banner .ul2 li{
+   width: .5rem;
+   height: .5rem;
+    border-radius: 50%;
+    background-color:#FFFFFF;
+    float: left;
+    margin-right: .25rem;
+}
+.content .banner .ul2 .active{
+    background-color: red;
+}
+.content .text{
+    height: 8.45rem;
+    background-color: #FFFFFF;
+   
+    box-sizing: border-box;
+    padding-top: .55rem;
+}
+.content .text .t_top{
+    padding: 0 .55rem 0.675rem .55rem;
+}
+.content .text .t_top .p1{
+    font-size: .95rem;
+    color:#333333;
+    line-height: 1.4rem;
+}
+.content .text .t_top .p2{
+    font-size: .65rem;
+    color:#919191;
+    line-height: 1.15rem;
+    margin-top: .675rem;
+}
+.content .text .t_top .p2 span .em2{
+    font-size: .85rem;
+    color:#DD3E34;
+    margin-right: .55rem; 
+    font-weight: bold;
+}
+.content .text .t_btm{
+    height: 2.5rem;
+    border-top: 2px solid #EAEAEA;
+}
+.content .text .t_btm .p1{
+    margin-left: .55rem;
+    line-height: 2.5rem;
+}
+.content .text .t_btm .p1 span{
+    font-size: .85rem;
+    color:#FF8A00;
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 2px solid #DBDBDB;
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius: 50%;
+}
+.content .text .t_btm .p1 em{
+    font-size: .65rem;
+    color:#919191;
+    margin-left: .25rem;
+}
+.content .text .t_btm .p2{
+    font-size: .65rem;
+    color:#919191;
+    line-height: 2.5rem;
+    margin-top: 0.1rem;
+    margin-right: .55rem;
+} 
+.content .text .t_btm .p2 em{
+    font-size: .85rem;
+    color:#DD3E34;
+    margin-right: .55rem; 
+    font-weight: bold;
+}
+/* 详细要求 */
+.content2{
+    height: 13.65rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: .5rem;
+    box-sizing: border-box;
+}
+.content2 .top{
+    padding-top: .875rem;
+    padding-left: .55rem;
+    margin-bottom: .9rem;
+}
+.content2 .top span{
+    display: inline-block;
+    width: .2rem;
+    height: .9rem;
+    background-color: burlywood;
+    border-radius: .2rem;
+}
+.content2 .top h4{
+    font-size: .85rem;
+    color:#000000;
+    line-height: 1;
+    margin-left: .375rem;
+}
+.content2 ul{
+    padding-left: 1rem;
+}
+.content2 ul li{
+    font-size: .65rem;
+    color:#333333;
+    line-height: 1.45rem;
+}
+.content2 p{
+    font-size: .65rem;
+    color:#333333;
+    line-height: 1;
+    padding-left: 1.4rem;
+    margin-top: .425rem;
+}
+
+.content3{
+    position: absolute;
+    left: 10%;top: 24%;
+    width: 80%;
+    height: 9.6rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-top: 1.75rem;
+    box-sizing: border-box;
+}
+.content3 .p1{
+    font-size: .85rem;
+    color:#333333;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+.content3 .p2{
+    font-size: .75rem;
+    color:#666666;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1.95rem;
+}
+.content3 .p3{
+    height: 2.75rem;
+    border-top: 2px solid #E3E3E3;
+    font-size: .7rem;
+    line-height: 2.75rem;
+}
+.content3 .p3 .a1{
+    display: inline-block;
+    width: 49%;
+    height: 2.75rem;
+    border-right:2px solid #E3E3E3 ;
+    text-align: center;
+    color:#333333;
+}
+.content3 .p3 .a2{
+    display: inline-block;
+    width: 49%;
+   color: #DE443A;
+   text-align: center;
+   height: 2.75rem;
+}
+.content3 .p3 a:hover{
+    color: #DE443A;
+}

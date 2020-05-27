@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index1.1.3.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>填写资料</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="index1.1.2.html">&lt;</a></p>
+        <p class="p2 fl">报名信息</p>
+    </div>
+</header>  
+<div class="content">
+   <ul class="ul1">
+       <li><span class="fl">微信号</span><input type="text" value="Gexiaolun" class="fr"></li>
+       <li><span class="fl">手机号：</span><a href="index1.1.6.html"><input type="text" value="获取手机号" class="input fr"></a></li>
+       <li><span class="fl">收货地址：</span><a href="index1.1.4.html" class="fr"><input type="text" value="填写收货地址 &gt;"></a></li>
+   </ul>
+</div>
+<div class="content2">
+    <ul class="ul2">
+        <li><span class="fl">抖音账户：</span><input type="text" value="输入抖音账户" class="fr"></li>
+        <li><span class="fl">抖音名称：</span><input type="text" value="输入抖音名称" class="fr"></li>
+        <li><span class="fl">粉丝数量：</span><input type="text" value="输入粉丝数量" class="fr"></li>
+        <li><span class="fl">抖音链接：</span><input type="text" value="输入抖音链接" class="fr"></li>
+    </ul>
+    <div class="bottom">
+        <div class="tp">
+            <span class="fl">抖音属性：</span><p>点击添加属性</p>
+        </div>
+        <div class="center">
+            <ul class="ul3" id="ul3">
+                <li class="active">美食</li>
+                <li class="active">居家日用</li>
+                <li class="active">美妆</li>
+                <li>种草带货</li>
+            </ul>
+            <ol class="ol1" id="ol1">
+                <li class="show">x</li>
+                <li class="show">x</li>
+                <li class="show">x</li>
+                <li class="">x</li>
+            </ol>
+        </div>
+       <div class="center2">
+            <ul class="ul4" id="ul4">
+                <li class="active">真人出镜</li>
+                <li>剧情</li>
+                <li>搞笑段子</li>
+                <li>探店</li> 
+            </ul>
+            <ol class="ol2" id="ol2">
+                <li class="show">x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+            </ol>
+        </div>
+        <div class="bm">
+            <p>账户简介：</p>
+            <textarea rows="7" >
+               在这里输入简介：
+            </textarea>
+        </div>
+    </div>
+</div>
+<!-- 添加抖音账号 -->
+<div class="content3">
+    <p class="clearfix"><span class="fl">添加抖音账号</span><a href="###" class="iconfont icon-tianjia fr"></a></p>
+</div>
+<!-- 完成 -->
+<footer>
+    <p> <a href="###">完成</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var ul3 = document.getElementById('ul3')
+    var li1 = ul3.getElementsByTagName('li')
+    var ol1 = document.getElementById('ol1')
+    var li2 = ol1.getElementsByTagName('li')
+
+        for(i=0;i<li1.length;i++){
+            li1[i].index = i
+            li1[i].onclick = function(){
+                this.className = 'active'
+                li2[this.index].className ='show'
+            }
+        }
+        for(i=0;i<li2.length;i++){
+            li2[i].index = i
+            li2[i].onclick = function(){
+                this.className =''
+                li1[this.index].className = ''
+           }
+        }
+      
+       
+
+
+    var ul4 = document.getElementById('ul4')
+    var li3 = ul4.getElementsByTagName('li')
+    var ol2 = document.getElementById('ol2')
+    var li4 = ol2.getElementsByTagName('li')
+   
+        for(i=0;i<li3.length;i++){
+            li3[i].index = i
+            li3[i].onclick = function(){
+                this.className = 'active'
+                li4[this.index].className = 'show'
+             }
+        }
+        for(i=0;i<li4.length;i++){
+            li4[i].index = i
+            li4[i].onclick = function(){
+                this.className =''
+                li3[this.index].className = ''
+            }
+        }
+   
+      
+</script>
+</body>
+</html>

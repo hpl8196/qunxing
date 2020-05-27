@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    background-color: #F3F3F3;
+}
+header .top{
+    width: 100%;
+    height: 2.55rem;
+    line-height: 2.55rem;
+    color:#000000;
+    border-bottom: 2px solid #EAEAEA;
+    background-color: #FFFFFF;
+}
+header .top .p1{
+    font-size: .85rem;
+    margin-left: .75rem;
+}
+header .top .p2{
+    font-size: .85rem;
+    margin-left: 5rem; 
+}
+header .top .p1 a{
+    color:#000000;
+}
+
+.content ul{
+	width: 100%;
+	height: 2.65rem;
+	border-bottom: 2px solid #E8E8E8;
+	display: flex;
+	padding-left: 0.7rem;
+	padding-right: 0.55rem;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+}
+.content ul li{
+	flex: 1;
+	font-size: 0.65rem;
+	color:#333333;
+	line-height: 2.65rem;
+	text-align: center;
+	width: 25%;
+}
+.content ul .active{
+	font-weight: 700;
+	border-bottom:5px solid #DD3E34;
+	color: #DD3E34;
+}
+.content ol{
+    width: 100%;
+    position: relative;
+}
+.content ol li{
+    width: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+.content ol .show{
+    display: block;
+}
+.content ol li .div1{
+	height: 5.5rem;
+    margin-top: .5rem;
+    background-color: #FFFFFF;
+    padding-left: .875rem;
+    padding-right: .575rem;
+    box-sizing: border-box;
+    
+}
+.content ol li .div1 .text .p1{
+    font-size: .7rem;
+    color:#333333;
+    width: 13rem;
+    line-height: 1.15rem;
+    margin-top: 1rem;
+}
+.content ol li .div1 .text .p2{
+    font-size: .5rem;
+    color:#666666;
+    width: 12rem;
+    line-height: 1;
+    margin-top: .5rem;
+}
+.content ol li .div1 a{
+    font-size: 1.25rem;
+    color:#999999;
+    line-height: 5.65rem;
+}

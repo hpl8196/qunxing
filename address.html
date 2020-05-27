@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>我的收获地址</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="main.html">&lt;</a></p>
+        <p class="p2 fl">提现申请</p>
+    </div>
+</header> 
+<div class="content">
+    <div class="div1">
+        <div class="text">
+            <p class="p1">葛小伦  13800138000</p>
+            <p class="p2">北京市 朝阳区 汤立路天通中苑二区40栋101室</p>
+            <span class="s1"></span>
+            <p class="p5"><span class="fl">已设为默认</span><a href="###" class="fr">编辑</a></p>
+        </div>
+        <div class="x">
+            <p class="p3">x</p> 
+        </div>
+    </div> 
+    <div class="div1">
+		<div class="text">
+			<p class="p1">张三  13800138000</p>
+			<p class="p2">北京市 海淀区 中苑二区101室</p>
+			<span class="s1"></span>
+			<p class="p5"><span class="fl">已设为默认</span><a href="###" class="fr">编辑</a></p>
+		</div>
+		<div class="x">
+		    <p class="p3">x</p> 
+		</div>
+    </div>
+    <div class="div1">
+        <div class="text">
+        	<p class="p1">李四  13800138000</p>
+        	<p class="p2">北京市 昌平区 天通中苑二区50栋601室</p>
+        	<span class="s1"></span>
+        	<p class="p5"><span class="fl">已设为默认</span><a href="###" class="fr">编辑</a></p>
+        </div>
+		<div class="x">
+		    <p class="p3">x</p> 
+		</div>
+    </div>
+</div>   
+<div class="content2">
+    <p><a href="###" id="a1">新增收货地址</a></p>
+</div>
+<div class="box" id="box"></div>
+<div class="content3" id="content3">
+    <p class="p1">填写收货地址</p>
+    <p class="p2"><input type="text" value="收货人"><input type="text" value="联系电话"></p>
+    <p class="p3"><span class="fl">选择地区</span><a href="###" class="fr" id="a2">&gt;</a></p>
+    <p class="p4">详细地址(街道、小区、乡镇)</p>
+    <p class="p5"><a href="address.html" id="a2">保存</a></p>
+</div>
+
+<script>
+    var a1 = document.getElementById('a1')
+    var content3 = document.getElementById('content3')
+    var box = document.getElementById('box')
+
+        a1.onclick = function(){
+            box.style.display = 'block'
+            content3.style.display = 'block'
+        }
+</script>
+</body>
+</html>

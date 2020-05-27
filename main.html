@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>我的账户</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="###">&lt;</a></p>
+        <p class="p2 fl">我的账户</p>
+    </div>
+    <div class="bottom">
+        <div class="img fl"><img src="img/tu21.png" alt=""></div>
+        <p class="fl">来一碗小仙女</p>
+    </div>
+</header>  
+<div class="content">
+    <ul>
+        <li><p class="p1">4</p><p class="p2"><a href="###">我的报名</a></p></li>
+        <li><p class="p1">2</p><p class="p2"><a href="###">进行中</a></p></li>
+        <li><p class="p1">1</p><p class="p2"><a href="###">推广完成</a></p></li>
+    </ul>
+</div> 
+<div class="content2">
+    <ul>
+        <li>
+             <a href="personal.html" class="clearfix">
+                 <span class="iconfont icon-gerenziliao fl"></span>
+                 <p class="fl">个人资料</p>
+                 <em class="fr">&gt;</em>
+             </a>
+        </li>
+        <li>
+            <a href="Mytremolo.html" class="clearfix">
+                <span class="iconfont icon-icon-douyin fl"></span>
+                <p class="fl">我的抖音号</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+        <li>
+            <a href="Mybalance.html" class="clearfix">
+                <span class="iconfont icon-yue fl"></span>
+                <p class="fl">我的余额</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+        <li>
+            <a href="address.html" class="clearfix">
+                <span class="iconfont icon-dizhi fl"></span>
+                <p class="fl">我的收获地址</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+        <li>
+            <a href="myorder.html" class="clearfix">
+                <span class="iconfont icon-tuiguangdingdan fl"></span>
+                <p class="fl">我的推广订单</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+    </ul>
+</div> 
+<div class="content3">
+    <ul>
+        <li>
+            <a href="invitation.html" class="clearfix">
+                <span class="iconfont icon-tixianjilu fl"></span>
+                <p class="fl">邀请有礼</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+        <li>
+            <a href="service.html" class="clearfix">
+                <span class="iconfont icon-lianxikefu fl"></span>
+                <p class="fl">联系客服</p>
+                <em class="fr">&gt;</em>
+            </a>
+        </li>
+    </ul>
+</div>
+<footer>
+    <ul>
+        <li>
+             <a href="index.html">
+                 <p class="iconfont icon-shouye p1"></p>
+                 <p class="p2">首页</p>
+             </a>
+        </li>
+        <li>
+            <a href="invite1.html">
+                 <p class="iconfont icon-yanzhengma p1"></p>
+                 <p class="p2">邀请码</p>
+            </a>
+        </li>
+        <li>
+             <a href="main.html" class="active">
+                 <p class="iconfont icon-wodedangxuan p1"></p>
+                 <p class="p2">我的</p>
+             </a>
+        </li>
+    </ul> 
+ </footer>
+</body>
+</html>

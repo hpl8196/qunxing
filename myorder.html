@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/myorder.css">
+	<link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<title>我的推广订单</title>
+	<script>
+	    window.onload = window.onresize = function(){		 
+	        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+	        //找到标签名为html的第一个
+	        var _html = document.getElementsByTagName('html')[0];
+	        //如果屏幕宽度大于640 
+	        //就用 640/16=40
+	        //小于640的时候 不确定 也是尺寸/40
+	        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+	        //最大网页尺寸640 
+	        //最大字体（根字体大小） 40
+	    }
+	</script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="main.html">&lt;</a></p>
+        <p class="p2 fl">我的推广订单</p>
+    </div>
+</header> 	
+<div class="content">
+	<ul id="ul1">
+		<li class="active">全部</li>
+		<li>进行中</li>
+		<li>已完成</li>
+		<li>申请失败</li>
+	</ul>
+	<ol class="clearfix" id="ol1">
+		<li class="show">
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">卡尔适大理石茶几电视柜组合小户型实木茶几地柜组合</p>
+					<p class="p2">已审核成功，请等待卖家发货，有疑问可联系卖家。</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">简约生活大束款天然兔尾草干花花束田园真花风干花束永生花花艺</p>
+					<p class="p2">申请审核中，请耐心等待!</p>
+				</div>
+				<a href="index1.1.html" class="fr">&gt;</a>
+			</div>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">1.8米1.5双人婚床日式布艺软包现代简洁毛毯</p>
+					<p class="p2">申请失败，请再接再厉!</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">真皮情侣棉拖鞋女冬季室内保暖居家防滑黑白皮拖家居厚底一对男潮</p>
+					<p class="p2">已完成</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+		</li>
+		<li>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">卡尔适大理石茶几电视柜组合小户型实木茶几地柜组合</p>
+					<p class="p2">已审核成功，请等待卖家发货，有疑问可联系卖家。</p>
+				</div>
+				<a href="index1.1.html" class="fr">&gt;</a>
+			</div>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">简约生活大束款天然兔尾草干花花束田园真花风干花束永生花花艺</p>
+					<p class="p2">申请审核中，请耐心等待!</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+		</li>
+		<li>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">真皮情侣棉拖鞋女冬季室内保暖居家防滑黑白皮拖家居厚底一对男潮</p>
+					<p class="p2">已完成</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+		</li>
+		<li>
+			<div class="div1">
+				<div class="text fl">
+					<p class="p1">1.8米1.5双人婚床日式布艺软包现代简洁毛毯</p>
+					<p class="p2">申请失败，请再接再厉!</p>
+				</div>
+				<a href="###" class="fr">&gt;</a>
+			</div>
+		</li>
+	</ol>
+</div>
+
+<script>
+	var ul1 = document.getElementById('ul1')
+	var li1 = ul1.getElementsByTagName('li')
+	var ol1 = document.getElementById('ol1')
+	var li2 = ol1.getElementsByTagName('li')
+
+		for(i=0;i<li1.length;i++){
+			li1[i].index = i
+			li1[i].onclick = function(){
+				for(i=0;i<li1.length;i++){
+					li1[i].className = ''
+					li2[i].className = ''
+				}
+				this.className = 'active'
+				li2[this.index].className = 'show'
+			}
+			
+
+		}
+</script>
+</body>
+</html>

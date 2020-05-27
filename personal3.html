@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/personal3.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>修改手机2</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="main.html">&lt;</a></p>
+        <p class="p2 fl">修改手机</p>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li><span class="fl">新手机：</span><input type="text" value="输入有效手机号" class="fl"><a href="###" class="fr" id="a1">获取验证码</a></li>
+            <li><span class="fl">新手机验证码：</span><input type="text" value="输入6位验证码" class="fl"></li>
+        </ul>
+    </div>
+</header>  
+<div class="content">
+    <p><a href="personal.html">确定</a></p>
+</div>  
+
+<script>
+    var a1 = document.getElementById('a1')
+        a1.onclick = function(){
+            alert(2580)
+        }
+</script>
+</body>
+</html>

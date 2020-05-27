@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index1.1.1.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>验货报名</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="index1.1.html">&lt;</a></p>
+        <p class="p2 fl">验货报名</p>
+    </div>
+</header> 
+<div class="content">
+    <div class="banner">
+        <ul class="ul1 clearfix" id="ul1">
+            <li class="show">
+                <a href="###"><img src="img/tu1.png" alt=""></a>
+            </li>
+            <li>
+                <a href="###"><img src="img/tu2.png" alt=""></a>
+            </li>
+        </ul>
+        <ul class="ul2 clearfix" id="ul2">
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="text">
+        <div class="t_top">
+            <p class="p1">卡尔适大理石茶几电视柜组合小户型实木茶几地柜组合</p>
+            <p class="p2 clearfix">
+               <em class="em1 fl"> 09月27日 20:00开始报名</em>
+               <span class="fr">金额: <em class="em2">￥500</em></span>
+            </p>
+        </div>
+        <div class="t_btm clearfix">
+            <p class="p1 fl"><span class="iconfont icon-taoicon"></span><em>狄普旗舰店</em></p>
+            <p class="p2 fr">佣金: <em>￥100</em></p>
+        </div>
+    </div>
+</div>  
+<!-- 详细要求 -->
+<div class="content2">
+   <div class="top clearfix">
+       <span class="fl"></span>
+       <h4 class="fl">详细要求</h4>
+   </div>
+   <ul>
+       <li>截止日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019-10-20</li>
+       <li>需求人数: &nbsp;50</li>
+       <li>粉丝要求: &nbsp;2000以上</li>
+       <li>寄样验货: &nbsp;50份</li>
+       <li>券后价: &nbsp;120元</li>
+   </ul>
+   <p>【视频优质者发货】 &nbsp;收货后5天内交作业。</p>
+</div>
+<div class="content3">
+    <p class="p1">你还不是响亮会员</p>
+    <p class="p2">成为会员后，可一键参与报名活动</p>
+    <p class="p3"><a href="index1.1.html" class="a1">取消</a><a href="index1.1.2.html" class="a2">成为会员</a></p>
+</div>
+
+<script>
+    var ul1 = document.getElementById('ul1')
+    var li1 = ul1.getElementsByTagName('li')
+    var ul2 = document.getElementById('ul2')
+    var li2 = ul2.getElementsByTagName('li')
+    setInterval(function(){})
+        for(i=0;i<li2.length;i++){
+            li2[i].index = i
+            li2[i].onclick = function(){
+                for(i=0;i<li2.length;i++){
+                    li2[i].className= ''
+                    li1[i].className = ''
+                }
+                    this.className = 'active'
+                    li1[this.index].className = 'show'
+            }
+        }
+        setInterval(function(){
+
+        })
+      
+</script>
+</body>
+</html>

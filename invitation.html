@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/invitation.css">
+	<link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+    <title>邀请有礼</title>
+    <script>
+	    window.onload = window.onresize = function(){		 
+	        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+	        //找到标签名为html的第一个
+	        var _html = document.getElementsByTagName('html')[0];
+	        //如果屏幕宽度大于640 
+	        //就用 640/16=40
+	        //小于640的时候 不确定 也是尺寸/40
+	        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+	        //最大网页尺寸640 
+	        //最大字体（根字体大小） 40
+	    }
+	</script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="main.html">&lt;</a></p>
+        <p class="p2 fl">邀请有礼</p>
+    </div>
+</header> 
+<div class="content">
+    <ul id="ul1">
+		<li class="active">邀请的达人</li>
+		<li>邀请的商家</li>
+    </ul>
+    <ol id="ol1">
+        <li class="show">
+            <div>
+                <span class="fl">1</span><img src="img/tu7.png" alt="" class="fl"><em class="fl">凯莎</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">2</span><img src="img/tu8.png" alt="" class="fl"><em class="fl">凉冰</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">3</span><img src="img/tu9.png" alt="" class="fl"><em class="fl">鹤熙</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">4</span><img src="img/tu10.png" alt="" class="fl"><em class="fl">蔷薇</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">5</span><img src="img/tu11.png" alt="" class="fl"><em class="fl">仙女</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">6</span><img src="img/tu12.png" alt="" class="fl"><em class="fl">刘闯</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">7</span><img src="img/tu13.png" alt="" class="fl"><em class="fl">太阳</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">8</span><img src="img/tu14.png" alt="" class="fl"><em class="fl">月亮</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">9</span><img src="img/tu15.png" alt="" class="fl"><em class="fl">星星</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">10</span><img src="img/tu10.png" alt="" class="fl"><em class="fl">北斗七星</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">11</span><img src="img/tu11.png" alt="" class="fl"><em class="fl">快乐</em><p class="fr">佣金：￥100</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="fl">1</span><img src="img/tu22.png" alt="" class="fl"><em class="fl">川岛屋</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">2</span><img src="img/tu23.png" alt="" class="fl"><em class="fl">喵小姐工作室</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">3</span><img src="img/tu24.png" alt="" class="fl"><em class="fl">米黛妮店铺</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">4</span><img src="img/tu25.png" alt="" class="fl"><em class="fl">扑吃</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">5</span><img src="img/tu26.png" alt="" class="fl"><em class="fl">爱可贴</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">6</span><img src="img/tu27.png" alt="" class="fl"><em class="fl">香榭丽舍</em><p class="fr">佣金：￥100</p>
+            </div>
+            <div>
+                <span class="fl">7</span><img src="img/tu28.png" alt="" class="fl"><em class="fl">狄普旗舰店</em><p class="fr">佣金：￥100</p>
+            </div>
+
+        </li>
+    </ol>
+</div>	  
+<script>
+    var ul1 = document.getElementById('ul1')
+    var li1 = ul1.getElementsByTagName('li')
+    var ol1 = document.getElementById('ol1')
+    var li2 = ol1.getElementsByTagName('li')
+
+    for(i=0;i<li1.length;i++){
+        li1[i].index = i
+        li1[i].onclick = function(){
+            for(i=0;i<li1.length;i++){
+                li1[i].className = ''
+                li2[i].className =''
+            }
+                this.className = 'active'
+                li2[this.index].className = 'show'
+        }
+    }
+</script>  
+</body>
+</html>

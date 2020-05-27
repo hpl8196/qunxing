@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/Mybalance.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>我的余额</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p><a href="main.html">&lt;</a></p>
+    </div>
+    <div class="bottom">
+        <p class="p1">我的余额</p>
+        <p class="p2">￥130<a href="Mybalance2.html">提现</a></p>
+    </div>
+</header> 
+<div class="content">
+    <div class="top">
+        <ul id="ul1">
+            <li class="active">
+                <span class="iconfont icon-woyaozhengqian"></span>
+                <p>获取记录</p>
+            </li>
+            <li>
+                <span class="iconfont icon-tixianjilu"></span>
+                <p>我的余额</p>
+            </li>
+        </ul>
+    </div>
+    <div class="center">
+        <ol class="ol1" id="ol1">
+            <li class="show">
+                <div><span class="fl">佣金</span><br><em>2019-06-01</em><i class="fr">+100</i></div>
+                <div><span class="fl">视频制作费</span><br><em>2019-07-05</em><i class="fr">+200</i></div>
+                <div><span class="fl">佣金</span><br><em>2019-07-25</em><i class="fr">+100</i></div>
+                <div><span class="fl">邀请有礼</span><br><em>2019-08-01</em><i class="fr">+300</i></div>
+                <div><span class="fl">佣金</span><br><em>2019-09-01</em><i class="fr">+100</i></div>
+            </li>
+            <li>
+                <div><span class="fl">提现</span><br><em>2019-06-01</em><i class="fr">+100</i></div>
+                <div><span class="fl">提现</span><br><em>2019-07-05</em><i class="fr">+200</i></div>
+                <div><span class="fl">提现</span><br><em>2019-07-25</em><i class="fr">+100</i></div>
+                <div><span class="fl">提现</span><br><em>2019-08-01</em><i class="fr">+300</i></div>
+                <div><span class="fl">提现</span><br><em>2019-09-01</em><i class="fr">+100</i></div>
+            </li>  
+        </ol>
+    </div>
+</div>    
+<script>
+    var ul1 = document.getElementById('ul1')
+    var li1 = ul1.getElementsByTagName('li')
+    var ol1 = document.getElementById('ol1')
+    var li2 = ol1.getElementsByTagName('li')
+
+        for(i=0;i<li1.length;i++){
+            li1[i].index = i
+            li1[i].onclick = function(){
+                for(i=0;i<li1.length;i++){
+                    li1[i].className = ''
+                    li2[i].className = ''
+                }
+                this.className = 'active'
+                li2[this.index].className = 'show'
+            }
+        }
+</script> 
+</body>
+</html>

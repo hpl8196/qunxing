@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index1.1.2.css">
+    <link rel="stylesheet" href="font/download/font_mm32tcpdze/iconfont.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>会员交费</title>
+    <script>
+        window.onload = window.onresize = function(){		 
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640 
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640 
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <p class="p1 fl"><a href="index1.1.1.html">&lt;</a></p>
+        <p class="p2 fl">会员交费</p>
+    </div>
+    <div class="top2">
+        <p><span class="iconfont icon-quanyi"></span>享受权益</p>
+    </div>
+</header>  
+
+<div class="content clearfix">
+    <p class="p1 fl"><span class="iconfont icon-tianjia"></span>十二个月</p>
+    <p class="p2 fr">￥198.00</p>
+</div>
+<!-- 会员权益说明 -->
+<div class="content2">
+    <h5>会员权益说明</h5>
+    <div class="text">
+        <p>1、会员可报名参加平台所有验货活动;</p>
+        <p>2、会员报名的推广，均可免费获得样品;</p>
+        <p>3、报名成功后，除推广佣金外，还有丰厚的基础制作费用，制作费用的高低根据你的账号质量要决定;</p>
+        <p>4、会员的优质推广视频,可免费获得商家的付费推广支持,让会员获得更大的佣金收益;</p>
+        <p>5、会员参与的验货推广，产品推厂爆品后,不会再发生商家降低佣金的问题，让推广更持久有效，会员的佣金收益得到长久的保证</p>
+    </div>
+</div>
+<!-- 支付 -->
+<div class="content3">
+    <p>
+        <span>总计:&nbsp;￥198.00</span>
+        <a href="index1.1.3.html">支付</a>
+    </p>
+</div>
+</body>
+</html>

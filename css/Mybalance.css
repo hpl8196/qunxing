@@ -1,0 +1,123 @@
+@charset "utf-8";
+header{
+    height: 10rem;
+    width: 100%;
+    background-color: #DD3E34;
+}
+header .top{
+    height: 2.55rem;
+    line-height: 2.55rem;
+    color:#000000;
+    margin-bottom: .55rem;
+}
+header .top p{
+    font-size: .85rem;
+    margin-left: .75rem;
+}
+header .top p a{
+    color:#FFFFFF;
+}
+header .bottom .p1{
+    font-size: .95rem;
+    text-align: center;
+    line-height: 1;
+    color:#FFFFFF;
+    margin-top: .225rem;
+}
+header .bottom .p2{
+    font-size: 1.4rem;
+    color:#FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    margin-top: .875rem;
+    line-height: 1;
+}
+header .bottom .p2 a{
+    font-size: .55rem;
+    display: inline-block;
+    width: 2.2rem;
+    height: 1rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #DD3E34;
+    color:#FFFFFF;
+    margin-left: .45rem;
+    padding-top: .125rem;
+}
+.content{
+   width: 100%;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   box-sizing: border-box;
+}
+.content .top{
+    height: 4.5rem;
+    background-color: #FFFFFF;
+    margin-top: -2.25rem;
+    border-radius: 12px;
+    box-shadow: 10px 0 0.7375rem 1px #DFDFDF;
+}
+.content .top ul{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.content .top ul li{
+    flex: 1;
+    width: 3rem;
+    padding-top: .75rem;
+    box-sizing: border-box;
+    text-align: center;
+    color:#333333;
+}
+.content .top ul .active{
+    color:#DD3E34;
+}
+.content .top ul li span{
+    font-size: 1.65rem;  
+}
+.content .top ul li p{
+    font-size: .75rem;
+    margin-top: .125rem;
+}
+.content .center{
+    position: relative;
+}
+.content .center .ol1{
+    margin-bottom: 5rem;
+    width: 100%;
+    overflow: hidden;
+}
+.content .center .ol1 li{
+    width: 100%;
+    float: left;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+.content .center .ol1 li div{
+    height: 3rem;
+    border-bottom: 2px solid #EAEAEA;
+}
+.content .center .ol1 li div span{
+    font-size: .75rem;
+    color:#333333;
+    line-height: 1;
+    margin-top: .59rem;
+}
+.content .center .ol1 li div em{
+    font-size: .5rem;
+    color:#999999;
+    line-height: 1;
+}
+.content .center .ol1 li div i{
+    font-size: .75rem;
+    color:#333333;
+    font-weight: 500;
+    margin-right: .125rem;
+}
+.content .center .ol1 .show{
+    display: block;
+}
+
